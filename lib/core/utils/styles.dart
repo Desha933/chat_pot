@@ -9,6 +9,26 @@ class Styles {
     fontWeight: FontWeightHelper.bold,
     color: AppColors.mainBlue,
   );
+  static TextStyle bold13Blue = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.bold,
+    color: AppColors.mainBlue,
+  );
+  static TextStyle bold14Black = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.bold,
+    color: AppColors.darkBlack,
+  );
+  static TextStyle medium14Black = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: AppColors.lightBlack,
+  );
+  static TextStyle bold20Blue = TextStyle(
+    fontSize: 20.sp,
+    fontWeight: FontWeightHelper.bold,
+    color: AppColors.mainBlue,
+  );
   static TextStyle meduim15Gray = TextStyle(
     fontSize: 15.sp,
     fontWeight: FontWeightHelper.medium,
@@ -18,5 +38,15 @@ class Styles {
     fontSize: 19.sp,
     fontWeight: FontWeightHelper.bold,
     color: AppColors.white,
+  );
+  static TextStyle medium17Green = TextStyle(
+    fontSize: 17.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: AppColors.green,
+  );
+  static TextStyle regular13Black = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: AppColors.darkBlack,
   );
 }
