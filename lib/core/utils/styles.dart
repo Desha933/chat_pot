@@ -44,4 +44,9 @@ class Styles {
     fontWeight: FontWeightHelper.medium,
     color: AppColors.green,
   );
+  static TextStyle regular13Black = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: AppColors.darkBlack,
+  );
 }
