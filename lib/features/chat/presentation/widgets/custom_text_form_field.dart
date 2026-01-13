@@ -6,13 +6,21 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconsax/iconsax.dart';
 
 class CustomTextFormField extends StatelessWidget {
-  const CustomTextFormField({super.key, this.controller});
+  const CustomTextFormField({
+    super.key,
+    this.controller,
+    this.onSubmit,
+    this.onSend,
+  });
   final TextEditingController? controller;
+  final Function(String)? onSubmit;
+  final Function(String)? onSend;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 18.w),
       child: TextFormField(
+        onFieldSubmitted: onSubmit,
         style: Styles.bold13Blue,
         controller: controller,
         decoration: InputDecoration(
@@ -32,7 +40,12 @@ class CustomTextFormField extends StatelessWidget {
             children: [
               Icon(Iconsax.microphone_2, color: AppColors.lightGray),
               horizontalSpacing(7),
-              Icon(Iconsax.send1, color: AppColors.mainBlue),
+              IconButton(
+                onPressed: () => onSend!(controller!.text),
+
+                icon: Icon(Iconsax.send1),
+                color: AppColors.mainBlue,
+              ),
               horizontalSpacing(16),
             ],
           ),

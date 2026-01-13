@@ -1,13 +1,13 @@
 import 'package:chat_pot/core/utils/app_assets.dart';
 import 'package:chat_pot/core/utils/spacing.dart';
 import 'package:chat_pot/core/utils/styles.dart';
-import 'package:chat_pot/features/home/presentation/widgets/background_container_text.dart';
+import 'package:chat_pot/features/chat/presentation/widgets/background_container_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconsax/iconsax.dart';
 
-class WellcomMessage extends StatelessWidget {
-  const WellcomMessage({super.key});
+class StartConversation extends StatelessWidget {
+  const StartConversation({super.key});
 
   @override
   Widget build(BuildContext context) {

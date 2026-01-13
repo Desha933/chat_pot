@@ -1,7 +1,7 @@
 import 'package:chat_pot/core/utils/app_colors.dart';
 import 'package:chat_pot/core/utils/spacing.dart';
 import 'package:chat_pot/core/utils/styles.dart';
-import 'package:chat_pot/features/home/presentation/home_screen.dart';
+import 'package:chat_pot/features/chat/presentation/chat_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -11,7 +11,7 @@ class OnBoardingButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Navigator.push(context, HomeScreen.route()),
+      onTap: () => Navigator.push(context, ChatScreen.route()),
       child: Container(
         width: 333.w,
         height: 56.h,

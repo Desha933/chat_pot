@@ -5,11 +5,15 @@ import 'package:chat_pot/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class ChatBubble extends StatelessWidget {
+class MessageBubble extends StatelessWidget {
   final String message;
   final bool isSender;
 
-  const ChatBubble({super.key, required this.message, required this.isSender});
+  const MessageBubble({
+    super.key,
+    required this.message,
+    required this.isSender,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +60,7 @@ class ChatBubble extends StatelessWidget {
                 ),
           Container(
             width: 252.w,
-            height: 54.h,
+
             margin: EdgeInsets.only(
               top: 15,
               bottom: 15,
